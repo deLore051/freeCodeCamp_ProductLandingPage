@@ -1,0 +1,226 @@
+html {
+    font-size: 10px; /* 1rem = 10px now*/
+    font-family: 'Goto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 219);
+}
+
+/*Navigation bar*/
+
+li, a {
+    font-size: 2.4rem;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(4, 115, 143);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5% 5px 1%;
+    background-color: rgb(4, 115, 143);
+}
+
+#header-img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: darkgrey;
+}
+
+/* Products section */
+
+h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "i1 i2 i3";
+}
+
+.item1 {
+    grid-area: i1;
+}
+
+.item2 {
+    grid-area: i2;
+}
+
+.item3 {
+    grid-area: i3;
+}
+
+figure >img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+figure > figcaption {
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 2;
+    background-color: rgb(4, 115, 143);
+    color: white;
+}
+
+/* Contact section */
+
+#address, #phone, #email-contact {
+    font-size: 2.4rem;
+    font-style: normal;
+    line-height: 1.5;
+    padding-left: 10%;
+}
+
+#address-anchor, #phone-anchor, #email-anchor {
+    background-color: beige;
+    color: rgb(36, 33, 33);
+    font-style: oblique;
+}
+
+/* About us section*/
+
+#about-paragraph {
+    text-align: center;
+    padding: 0 5% 5% 5%;
+    font-size: 2.4rem;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Sbmit section */
+
+#submit-form {
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+label {
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+#email, #submit {
+    padding: 10px;
+    width: 75%;
+    border-radius: 50px;
+    margin: 20px 0 20px 0;
+    font-size: 2.4rem;
+} 
+
+#submit:hover {
+    background-color: rgb(4, 115, 143);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    li, a {
+        font-size: 1.4rem;
+    }
+    
+    header {
+        padding: 5px 0.5% 5px 0.5%;
+    }
+    
+    #header-img {
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .nav-links li {
+        padding: 0px 5px;
+    }
+
+    /* Products section */
+
+    h2 {
+        font-size: 2.4rem;
+        padding: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-auto-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "i1"
+            "i2"
+            "i3";
+    }
+
+    figure >img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+      }
+    
+    figure > figcaption {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    /* Contact section */
+
+    #address, #phone, #email-contact {
+        font-size: 1.8rem;
+    }
+
+    /* About us section*/
+
+    #about-paragraph {
+        font-size: 1.8rem;
+    }
+
+    /* Sbmit section */
+
+    #submit-form {
+        margin: 50px 0 50px 0;
+        text-align: center;
+    }
+
+    label {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    #email, #submit {
+        width: 75%;
+        font-size: 1.8rem;
+    } 
+}
